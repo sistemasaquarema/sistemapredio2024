@@ -31,7 +31,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Informativo</a>
+      <a class="navbar-brand" href="#">Área de Informativos</a>
     </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="nav navbar-nav d-flex justify-content-end" id="links">
@@ -66,7 +66,7 @@
           Sugestão/Reclamação
         </div>
       </div>
-      <div class="col-sm-6" style="height: 50px;">
+      <div class="col-sm-6" style="height: 10px;">
         <label for="imagem" class="form-label">Imagem</label>
         <input type="file" class="form-control1" id="imagem" name="imagem" placeholder="" value="" autofocus required>
       </div>
