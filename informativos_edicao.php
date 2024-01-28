@@ -66,7 +66,7 @@
           Sugestão/Reclamação
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6" style="height: 50px;">
         <label for="imagem" class="form-label">Imagem</label>
         <input type="file" class="form-control1" id="imagem" name="imagem" placeholder="" value="" autofocus required>
       </div>
