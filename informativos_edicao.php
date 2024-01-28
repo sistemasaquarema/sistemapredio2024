@@ -60,13 +60,6 @@
         <label for="texto" class="form-label">Texto</label>
         <input type="text" class="form-control1" id="" name="texto" placeholder="" value="" autofocus required>
       </div>
-      <button class="w-100 btn btn-primary btn-lg" type="submit" name="">
-      Enviar Informativo
-      </button>
-  </form>
-
-  <form action="upload-img-informativos.php" method="POST" enctype="multipart/form-data">
-
       <div class="col-sm-12">
         <label for="imagem" class="form-label">Imagem</label>
       </div>
@@ -79,7 +72,7 @@
       </br>
       </br>
       <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_upimg">
-      Enviar Imagem
+      Enviar
       </button>
   
   </form>
