@@ -66,9 +66,9 @@
           Sugestão/Reclamação
         </div>
       </div>
-      <div class="col-sm-12">
+      <div class="col-sm-6">
         <label for="imagem" class="form-label">Imagem</label>
-        <input type="file" class="form-control1" id="sugestao" name="imagem" placeholder="" value="" autofocus required>
+        <input type="file" class="form-control1" id="imagem" name="imagem" placeholder="" value="" autofocus required>
       </div>
       </br>
       </br>
