@@ -69,7 +69,7 @@
           <div class="carousel-caption text-start">
             <h1>Gás encanado!</h1>
             <p>O serviço de encanamento do gás esta sendo feito no nosso querido edificio!</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Editar</a></p>
+            <p><a class="btn btn-lg btn-primary" href="informativos_edicao.php">Editar</a></p>
           </div>
         </div>
       </div>
