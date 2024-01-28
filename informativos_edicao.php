@@ -52,7 +52,7 @@
 
       <div class="col-sm-12">
         <label for="assunto" class="form-label">Título</label>
-        <input type="text" class="form-control" id="assunto" name="assunto" placeholder="" value="" autofocus required>
+        <input type="text" class="form-control" id="assunto" name="titulo" placeholder="" value="" autofocus required>
         <div class="invalid-feedback">
           Título
         </div>
@@ -61,7 +61,7 @@
 
       <div class="col-sm-12">
         <label for="sugestao" class="form-label">Texto</label>
-        <input type="text" class="form-control1" id="sugestao" name="sugestao" placeholder="" value="" autofocus required>
+        <input type="text" class="form-control1" id="sugestao" name="texto" placeholder="" value="" autofocus required>
         <div class="invalid-feedback">
           Sugestão/Reclamação
         </div>
