@@ -70,14 +70,14 @@
         <label for="imagem" class="form-label">Imagem</label>
       </div>
       <div class="col-sm-12">
-        <input type="file" class="form-control1" id="imagem" name="imagem" placeholder="" value="" autofocus required>
+        <input type="file" class="form-control1" id="" name="imagem" placeholder="" value="" autofocus required>
       </div>
       </br>
       </br>
       </br>
       </br>
       </br>
-      <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_cadastrar">
+      <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_upimg">
       Enviar
       </button>
   

@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
 
   // Verifica se o arquivo é uma imagem
-  if(isset($_POST['submit'])) {
+  if(isset($_POST['bt_upimg'])) {
     $check = getimagesize($_FILES['imagem']['tmp_name']);
     if($check === false) {
       echo 'O arquivo não é uma imagem.';
