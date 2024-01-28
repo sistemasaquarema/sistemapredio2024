@@ -42,12 +42,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
   }
 
-  if (isset($_POST['bt_upimg'])) {
-    // Processa os campos de entrada de texto
-    $titulo = $_POST['titulo'];
-    $texto = $_POST['texto'];
-}
-
   
 }
 ?>
