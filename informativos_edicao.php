@@ -51,10 +51,10 @@
     <div class="row g-12">
 
       <div class="col-sm-12">
-        <label for="assunto" class="form-label">Assunto</label>
+        <label for="assunto" class="form-label">Título</label>
         <input type="text" class="form-control" id="assunto" name="assunto" placeholder="" value="" autofocus required>
         <div class="invalid-feedback">
-          Assunto
+          Título
         </div>
       </div>
 
