@@ -66,10 +66,13 @@
           Sugestão/Reclamação
         </div>
       </div>
-      <div style="width: 200px; height: 10px;">
+      <div class="col-sm-8">
         <label for="imagem" class="form-label">Imagem</label>
         <input type="file" class="form-control1" id="imagem" name="imagem" placeholder="" value="" autofocus required>
       </div>
+      </br>
+      </br>
+      </br>
       </br>
       <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_cadastrar">
       Enviar
