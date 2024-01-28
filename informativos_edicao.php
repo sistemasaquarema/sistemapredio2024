@@ -69,7 +69,7 @@
       <div class="col-sm-12">
         <label for="imagem" class="form-label">Imagem</label>
       </div>
-      <div class="col-sm-12" style="height: 10px;">
+      <div style="width: 500px; height: 10px;">
         <input type="file" class="form-control1" id="imagem" name="imagem" placeholder="" value="" autofocus required>
       </div>
       </br>
