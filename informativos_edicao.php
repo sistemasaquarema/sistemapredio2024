@@ -46,7 +46,7 @@
 
   <h3>Descreva o informativo</h3>
   
-  <form action="acoes/cria-sugestao.php" method="POST" class="needs-validation container" novalidate>
+  <form action="upload-img-informativos.php" method="POST" enctype="multipart/form-data">
 
     <div class="row g-12">
 
