@@ -53,11 +53,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $img_nome = basename($_FILES['imagem']['name']);
   $titulo = $_POST['titulo'];
   $texto  = $_POST['texto'];
+  $conteudo = $_POST['saiba-mais'];
   $id = $_POST['id'];
 
    // INSTRUÇÃO SQL
    
-   $sql = "UPDATE informativos SET titulo = '$titulo', descricao = '$texto', imagem = '$img_nome' WHERE id = $id";
+   $sql = "UPDATE informativos SET titulo = '$titulo', descricao = '$texto', conteudo = '$conteudo', imagem = '$img_nome' WHERE id = $id";
   // Move o arquivo para a pasta de destino
   if ($uploadOk) {
     if (move_uploaded_file($_FILES['imagem']['tmp_name'], $targetFile) && mysqli_query($con, $sql)) {
