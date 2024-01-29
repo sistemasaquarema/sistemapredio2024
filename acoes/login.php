@@ -22,6 +22,7 @@ if(isset($_POST['bt_entrar'])) {
         $_SESSION['status']    = "Sucesso!";
         $_SESSION['nome'] = $dados['nome'];
         $_SESSION['email']     = $dados['email'];
+        $_SESSION['apartamento']     = $dados['apartamento'];
         header('Location: ../painel.php');// REDIRECIONAR PARA O PAINEL SPN
        
     } else {
