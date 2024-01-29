@@ -190,17 +190,24 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Informações adicionais</h5>
+      <?php 
+              $sql = "SELECT titulo FROM informativos where id = 1";
+              $titulores = mysqli_query($con, $sql);
+              if ($titulores && mysqli_num_rows($titulores) > 0) {
+                $titulo = mysqli_fetch_assoc($titulores);
+                echo '<h5 class="modal-title" id="exampleModalLabel">' . htmlspecialchars($titulo['titulo']) . '</h5>';
+              }
+            ?>
         
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
       </div>
       <div class="modal-body">
       <?php 
               $sql = "SELECT conteudo FROM informativos where id = 1";
-              $titulores = mysqli_query($con, $sql);
-              if ($titulores && mysqli_num_rows($titulores) > 0) {
-                $titulo = mysqli_fetch_assoc($titulores);
-                echo '<p>' . htmlspecialchars($titulo['conteudo']) . '</p>';
+              $conteudores = mysqli_query($con, $sql);
+              if ($conteudores && mysqli_num_rows($conteudores) > 0) {
+                $conteudo = mysqli_fetch_assoc($conteudores);
+                echo '<p>' . htmlspecialchars($conteudo['conteudo']) . '</p>';
               }
             ?>
       </div>
