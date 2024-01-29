@@ -91,7 +91,7 @@
           $imgres = mysqli_query($con, $sql);
           if ($imgres && mysqli_num_rows($imgres) > 0) {
             $img = mysqli_fetch_assoc($imgres);
-            echo '<img src="images/' . htmlspecialchars($img['imagem']) . '"/>';
+            echo '<img src="informativo/imagens' . htmlspecialchars($img['imagem']) . '"/>';
           }
         ?>
         <!--<img src="images/imagem03.jpg" alt="Foto de trabalho" />-->
