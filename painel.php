@@ -176,8 +176,7 @@
               <p>Envie e acesse as informações de aluguel.</p>
               <p><a class="btn btn-primary" href="menu_de_opcoes.php">Acessar &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
-        <?php endif;?>
-    </div><!-- /.row -->
+          </div><!-- /.row -->
     <div class="row">
       <div class="col-lg-4">
       <h2>Reunião</h2>
@@ -186,6 +185,8 @@
           <p><a class="btn btn-primary" href="reuniao.php">Acessar &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+        <?php endif;?>
+   
 
 
 <!-- Modal -->
