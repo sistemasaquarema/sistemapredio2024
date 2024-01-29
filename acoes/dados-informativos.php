@@ -18,27 +18,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if(isset($_POST['bt_upimg'])) {
     $check = getimagesize($_FILES['imagem']['tmp_name']);
     if($check === false) {
-      echo 'O arquivo não é uma imagem.';
+      $_SESSION['mensagem'] = "O arquivo não é uma imagem.";
+      $_SESSION['status']   = "danger";
+      header('Location: ../painel_adm.php');
       $uploadOk = false;
     }
   }
 
   // Verifica se o arquivo já existe
   if (file_exists($targetFile)) {
-    echo 'Já existe um arquivo com esse nome.';
+    $_SESSION['mensagem'] = "Já existe um arquivo com esse nome.";
+    $_SESSION['status']   = "danger";
+    header('Location: ../painel_adm.php');
     $uploadOk = false;
   }
 
   // Limita o tamanho do arquivo
   if ($_FILES['imagem']['size'] > 500000) {
-    echo 'O tamanho do arquivo é muito grande.';
+    $_SESSION['mensagem'] = "O tamanho do arquivo é muito grande.";
+    $_SESSION['status']   = "danger";
+    header('Location: ../painel_adm.php');
     $uploadOk = false;
   }
 
   // Verifica os formatos de arquivo permitidos
   $allowedExtensions = array('jpg', 'jpeg', 'png', 'gif');
   if (!in_array($imageFileType, $allowedExtensions)) {
-    echo 'Apenas arquivos JPG, JPEG, PNG e GIF são permitidos.';
+    $_SESSION['mensagem'] = "Apenas arquivos JPG, JPEG, PNG e GIF são permitidos.";
+    $_SESSION['status']   = "danger";
+    header('Location: ../painel_adm.php');
     $uploadOk = false;
   }
 
