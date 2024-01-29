@@ -49,14 +49,14 @@
     <div class="row g-12">
 
     <div class="col-sm-12">
-      <label for="tipo" class="form-label">Selecione</label>
+      <label for="tipo" class="form-label">Você é proprietário ou inquilino?</label>
       <select class="form-control" id="tipo" name="tipo" required>
         <option value="">Selecione uma opção</option>
         <option value="proprietário">PROPRIETARIO</option>
         <option value="inquilino">INQUILINO</option>
       </select>
       <div class="invalid-feedback">
-            Selecione o tipo.
+            Obrigatório selecionar o tipo do cadastro.
         </div>
     </div>
 
@@ -124,7 +124,7 @@
       </div>
       <br>
       <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_cadastrar">
-      Sign up
+      Cadastrar
       </button>
   
   </form>
