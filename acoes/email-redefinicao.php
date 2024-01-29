@@ -15,7 +15,7 @@
         $sql= "SELECT nome FROM usuarios where email = '$email' ";
 
 
-        $link = "www.sistemasaquerema.site/redefina-sua-senha.php?email=$email";
+        $link = "https://www.sistemasaquerema.site/redefina-sua-senha.php?email=$email";
 
         //Executar instrucao SQL e verificar sucesso
         if(mysqli_query($con, $sql)) {
