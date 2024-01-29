@@ -1,4 +1,10 @@
 <html>
+<?php
+    // INICIAR SESSÃO
+    session_start();
+    require_once 'acoes/verifica-logado.php';
+    require_once 'acoes/conexao.php';
+?>
 <head>
 	<title>Formulário de Autorização de Aluguel</title>
 	<style>
@@ -75,7 +81,7 @@
 		<input type="text" name="rg" required><br><br>
 		
 		<label for="apartamento">Apartamento:</label>
-		<input type="text" name="apartamento" required><br><br>
+		<input type="text" name="apartamento" value="<?= $_SESSION['apartamento']; ?>" readonly><br><br>
 		
 		<label for="inquilinos">Nome dos Inquilinos:</label>
 		<input type="text" name="inquilinos" required><br><br>
