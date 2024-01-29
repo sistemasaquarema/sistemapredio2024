@@ -84,7 +84,7 @@
                 echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
               }
             ?>
-            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Saiba mais</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#myModal1">Saiba mais</a></p>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
                 echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
               }
             ?> 
-            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Saiba mais</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#myModal2">Saiba mais</a></p>
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@
                 echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
               }
             ?> 
-            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Saiba mais</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#myModal3">Saiba mais</a></p>
           </div>
         </div>
       </div>
@@ -186,7 +186,7 @@
 </center>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -217,6 +217,71 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      <?php 
+              $sql = "SELECT titulo FROM informativos where id = 1";
+              $titulores = mysqli_query($con, $sql);
+              if ($titulores && mysqli_num_rows($titulores) > 0) {
+                $titulo = mysqli_fetch_assoc($titulores);
+                echo '<h5 class="modal-title" id="exampleModalLabel">' . htmlspecialchars($titulo['titulo']) . '</h5>';
+              }
+            ?>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+      <?php 
+              $sql = "SELECT conteudo FROM informativos where id = 1";
+              $conteudores = mysqli_query($con, $sql);
+              if ($conteudores && mysqli_num_rows($conteudores) > 0) {
+                $conteudo = mysqli_fetch_assoc($conteudores);
+                echo '<p>' . htmlspecialchars($conteudo['conteudo']) . '</p>';
+              }
+            ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      <?php 
+              $sql = "SELECT titulo FROM informativos where id = 1";
+              $titulores = mysqli_query($con, $sql);
+              if ($titulores && mysqli_num_rows($titulores) > 0) {
+                $titulo = mysqli_fetch_assoc($titulores);
+                echo '<h5 class="modal-title" id="exampleModalLabel">' . htmlspecialchars($titulo['titulo']) . '</h5>';
+              }
+            ?>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+      <?php 
+              $sql = "SELECT conteudo FROM informativos where id = 1";
+              $conteudores = mysqli_query($con, $sql);
+              if ($conteudores && mysqli_num_rows($conteudores) > 0) {
+                $conteudo = mysqli_fetch_assoc($conteudores);
+                echo '<p>' . htmlspecialchars($conteudo['conteudo']) . '</p>';
+              }
+            ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- START THE FEATURETTES -->
 
