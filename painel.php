@@ -223,7 +223,7 @@
     <div class="modal-content">
       <div class="modal-header">
       <?php 
-              $sql = "SELECT titulo FROM informativos where id = 1";
+              $sql = "SELECT titulo FROM informativos where id = 2";
               $titulores = mysqli_query($con, $sql);
               if ($titulores && mysqli_num_rows($titulores) > 0) {
                 $titulo = mysqli_fetch_assoc($titulores);
@@ -235,7 +235,7 @@
       </div>
       <div class="modal-body">
       <?php 
-              $sql = "SELECT conteudo FROM informativos where id = 1";
+              $sql = "SELECT conteudo FROM informativos where id = 2";
               $conteudores = mysqli_query($con, $sql);
               if ($conteudores && mysqli_num_rows($conteudores) > 0) {
                 $conteudo = mysqli_fetch_assoc($conteudores);
@@ -255,7 +255,7 @@
     <div class="modal-content">
       <div class="modal-header">
       <?php 
-              $sql = "SELECT titulo FROM informativos where id = 1";
+              $sql = "SELECT titulo FROM informativos where id = 3";
               $titulores = mysqli_query($con, $sql);
               if ($titulores && mysqli_num_rows($titulores) > 0) {
                 $titulo = mysqli_fetch_assoc($titulores);
@@ -267,7 +267,7 @@
       </div>
       <div class="modal-body">
       <?php 
-              $sql = "SELECT conteudo FROM informativos where id = 1";
+              $sql = "SELECT conteudo FROM informativos where id = 3";
               $conteudores = mysqli_query($con, $sql);
               if ($conteudores && mysqli_num_rows($conteudores) > 0) {
                 $conteudo = mysqli_fetch_assoc($conteudores);
