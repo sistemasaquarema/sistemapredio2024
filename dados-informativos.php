@@ -1,14 +1,12 @@
 <?php
 
-// iniciar uma nova sessão
-session_start();
 
 
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // chamar nossa conexao
-  require_once 'conexao.php';
+
   // pegar os dados postados e fazer o escape
 
   $targetDir = 'informativo/imagens'; // Substitua pelo caminho real da pasta
