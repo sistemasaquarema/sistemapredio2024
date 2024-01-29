@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 
   // Limita o tamanho do arquivo
-  if ($_FILES['imagem']['size'] > 500000) {
+  if ($_FILES['imagem']['size'] > 1000000) {
     $_SESSION['mensagem'] = "O tamanho do arquivo é muito grande.";
     $_SESSION['status']   = "danger";
     header('Location: ../painel_adm.php');
