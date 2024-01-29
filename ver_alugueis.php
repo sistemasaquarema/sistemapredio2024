@@ -74,6 +74,8 @@
 			mysqli_close($con);
 		?>
   	</div>	
+		</br>
+		</br>
 	<form action="acoes/excluir_aluguel.php" method="POST">
 		<?php  
 		if (mysqli_num_rows($resultado) > 0) {
