@@ -176,7 +176,7 @@
               <p>Envie e acesse as informações de aluguel.</p>
               <p><a class="btn btn-primary" href="menu_de_opcoes.php">Acessar &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
-        <?endif;?>
+        <?php endif;?>
     </div><!-- /.row -->
 <center>
     <h2>Reunião</h2>
