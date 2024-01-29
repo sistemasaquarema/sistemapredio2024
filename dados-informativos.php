@@ -64,6 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 
    // FECHAR CONEXAO
-  mysqli_close($con);
+
 }
 ?>
