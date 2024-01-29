@@ -47,7 +47,8 @@
   <form action="acoes/redefinicao.php" method="POST" class="needs-validation container" novalidate onSubmit="return validaCampo()">
   <?php
       $id = $_GET['email'] ?? ''; 
-      echo '<input type="text" id="email" name="email" value="' . $email . '">'; // Insere o valor do ID no campo oculto
+      echo '<input type="hidden" id="email" name="email" value="' . $email . '">'; // Insere o valor do ID no campo oculto
+      echo '<h1>" . $email . "</h1>'; // Insere o valor do ID no campo oculto
     ?>
     
 
