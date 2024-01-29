@@ -190,12 +190,12 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-      <?php 
-              $sql = "SELECT titulo FROM informativos where id = 1";
+        <?php 
+              $sql = "SELECT titulo, descricao, conteudo FROM informativos where id = 1";
               $titulores = mysqli_query($con, $sql);
               if ($titulores && mysqli_num_rows($titulores) > 0) {
                 $titulo = mysqli_fetch_assoc($titulores);
-                echo '<p>' . htmlspecialchars($titulo['titulo']) . '</p>';
+                echo '<h5 class="modal-title" id="exampleModalLabel">' . htmlspecialchars($titulo['conteudo']) . '</h5>';
               }
             ?>
       </div>
@@ -203,7 +203,7 @@
       </div>
       <div class="modal-body">
       <?php 
-              $sql = "SELECT conteudo FROM informativos where id = 1";
+              $sql = "SELECT titulo, descricao, conteudo FROM informativos where id = 1";
               $titulores = mysqli_query($con, $sql);
               if ($titulores && mysqli_num_rows($titulores) > 0) {
                 $titulo = mysqli_fetch_assoc($titulores);
