@@ -87,7 +87,7 @@
       </div>
       <div class="carousel-item">
         <?php
-          $sql = "SELECT titulo, descricao FROM informativos where id = 3";
+          $sql = "SELECT imagem FROM informativos where id = 3";
           $imgres = mysqli_query($con, $sql);
           if ($imgres && mysqli_num_rows($imgres) > 0) {
             $img = mysqli_fetch_assoc($imgres);
