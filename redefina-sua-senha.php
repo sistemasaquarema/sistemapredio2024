@@ -65,7 +65,7 @@
       </div>
       <br>
       <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_cadastrar">
-      Receber email
+      Redefinir
       </button>
   
   </form>
