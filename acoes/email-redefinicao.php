@@ -19,7 +19,7 @@
 
         //Executar instrucao SQL e verificar sucesso
         if(mysqli_query($con, $sql)) {
-            $assunto = "Redefinir Senha do Saquarema";
+            $assunto = "Redefinir Senha do Sistema Saquarema";
             $mensagem = "Redefina sua senha em: " . $link;
             $header = "From: saquarema";
             mail($email, $assunto, $mensagem, $header);
