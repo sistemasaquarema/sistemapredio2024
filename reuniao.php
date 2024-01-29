@@ -17,7 +17,7 @@
             const api = new JitsiMeetExternalAPI("8x8.vc", {
               roomName: "vpaas-magic-cookie-c79b5d7f82e24753828119f005ecb00f/SampleAppLongTimeOutcomesInterruptSeamlessly",
               parentNode: document.querySelector('#jaas-container'),
-              lang: 'br',
+              lang: 'pt',
 							// Make sure to include a JWT if you intend to record,
 							// make outbound calls or use any other premium features!
 							// jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtYzc5YjVkN2Y4MmUyNDc1MzgyODExOWYwMDVlY2IwMGYvNDJmYWY0LVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE2ODQ3ODk5NjcsImV4cCI6MTY4NDc5NzE2NywibmJmIjoxNjg0Nzg5OTYyLCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtYzc5YjVkN2Y4MmUyNDc1MzgyODExOWYwMDVlY2IwMGYiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6Imdvb2dsZS1vYXV0aDJ8MTEzOTI3NjU3MjA1ODQ0MDU4MzI0IiwiYXZhdGFyIjoiIiwiZW1haWwiOiJ0ZXN0LnVzZXJAY29tcGFueS5jb20ifX0sInJvb20iOiIqIn0.Shm_fC9IveqN5XNANJZbvQ1Pw4tU2Mip30Pk9yiqzPLu-DXpgWUO-UE9DSFTa08RKhlEi6F34EfnWAqj_NZYsnuUnGyB8rsvrZidsQH6bVnorn8XDBKzzXY05_1BYEsYKzHCaul7XLNokUGWlmq5Ki0PKFY3d65q_Q1R0xr39l05vmGBVEenByazacdE8GUcskq7fWbsh9xR1ppcgXzB8XrBLyJOa46TWk5oflGHRX2cUxWgeNW8EvEMIj2gMLkwsDjOPvfiaCAuCm3CGJJxl2a0HE0_dXSDbNjtsL4EqhacvqErDTZ1mHkf8HuRX6uJtGKC2TgGfKrTYba10Csslg"
