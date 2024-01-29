@@ -9,7 +9,15 @@ require_once 'conexao.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  if(!$_FILES['imagem']){
+
+
+
+
+  $targetDir = '../informativo/imagens/'; // Substitua pelo caminho real da pasta
+  $targetFile = $targetDir . basename($_FILES['imagem']['name']);
+  $uploadOk = true;
+  $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+  if(is_null($targetFile)){
     $titulo = $_POST['titulo'];
     $texto  = $_POST['texto'];
     $conteudo = $_POST['saiba-mais'];
@@ -24,10 +32,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-  $targetDir = '../informativo/imagens/'; // Substitua pelo caminho real da pasta
-  $targetFile = $targetDir . basename($_FILES['imagem']['name']);
-  $uploadOk = true;
-  $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
 
   // Verifica se o arquivo é uma imagem
   if(isset($_POST['bt_upimg'])) {
