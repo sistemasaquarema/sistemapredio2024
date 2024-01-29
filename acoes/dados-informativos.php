@@ -27,9 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   // Verifica se o arquivo já existe
   if (file_exists($targetFile)) {
-    $_SESSION['mensagem'] = "Já existe um arquivo com esse nome.";
-    $_SESSION['status']   = "danger";
-    header('Location: ../painel_adm.php');
     $uploadOk = false;
   }
 
@@ -69,6 +66,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $_SESSION['mensagem'] = "Não foi possível enviar";
       $_SESSION['status']   = "danger";
       header('Location: ../painel_adm.php');
+    }
+  }else{
+    $sql = "UPDATE informativos SET titulo = '$titulo', descricao = '$texto', conteudo = '$conteudo' WHERE id = $id";
+    if(mysqli_query($con, $sql)){
+      $_SESSION['mensagem'] = "Envio realizado com sucesso!";
+      $_SESSION['status']   = "success";
     }
   }
 
