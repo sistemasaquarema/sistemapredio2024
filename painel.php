@@ -178,14 +178,15 @@
           </div><!-- /.col-lg-4 -->
         <?php endif;?>
     </div><!-- /.row -->
-<center>
-    <h2>Reunião</h2>
-        <p>Acesse a reunião.</p>
-        <p>Para sair da reunião, clique no botão HOME no canto superior esquerdo.</p>
-        <p><a class="btn btn-primary" href="reuniao.php">Acessar &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-</center>
+    <div class="row">
+      <div class="col-lg-4">
+      <h2>Reunião</h2>
+          <p>Acesse a reunião.</p>
+          <p>Para sair da reunião, clique no botão HOME no canto superior esquerdo.</p>
+          <p><a class="btn btn-primary" href="reuniao.php">Acessar &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
 
 <!-- Modal -->
 <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
