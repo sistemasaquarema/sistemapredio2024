@@ -53,17 +53,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Move o arquivo para a pasta de destino
   if ($uploadOk) {
     if (move_uploaded_file($_FILES['imagem']['tmp_name'], $targetFile)) {
-      $_SESSION['mensagem'] = "Envio realizado com sucesso!";
-      $_SESSION['status']   = "success";
-      header('Location: ../painel_adm.php');
+      echo 'O arquivo foi enviado com sucesso.';
     } else {
-      $_SESSION['mensagem'] = "Não foi possível enviar";
-      $_SESSION['status']   = "danger";
-      header('Location: ../painel_adm.php');
+      echo 'Ocorreu um erro ao enviar o arquivo.';
     }
   }
 
-   // FECHAR CONEXAO
+   
 
 }
 ?>
