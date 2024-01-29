@@ -21,7 +21,7 @@
         $sql= "UPDATE  usuarios SET senha = '$senha' WHERE email = '$email'";
         //Executar instrucao SQL e verificar sucesso
         if(mysqli_query($con, $sql)) {
-            $_SESSION['mensagem'] = "Redefinido com sucesso!!";
+            $_SESSION['mensagem'] = "$email      $senha";
             $_SESSION['status'] = "success";
             header('Location: ../index.php');
 
