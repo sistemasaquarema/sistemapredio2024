@@ -45,34 +45,35 @@
 <div class="container-fluid bg1 text-center cadcurso" id="quem">
 
   <h3>Aluguel atual</h3>
-  
-  <?php
-		session_start();
-		require_once 'acoes/verifica-logado.php';
-		// Conectar ao banco de dados e consultar os aluguéis
-		require_once 'acoes/conexao.php';
+  <div class="col-sm-12">
+	<?php
+			session_start();
+			require_once 'acoes/verifica-logado.php';
+			// Conectar ao banco de dados e consultar os aluguéis
+			require_once 'acoes/conexao.php';
 
-		$ap = $_SESSION['apartamento'];
+			$ap = $_SESSION['apartamento'];
 
-		$sql = "SELECT * FROM aluguel where DATE(data_fim_aluguel) >= DATE(NOW()) AND apartamento = $ap";
-		$resultado = mysqli_query($con, $sql);
+			$sql = "SELECT * FROM aluguel where DATE(data_fim_aluguel) >= DATE(NOW()) AND apartamento = $ap";
+			$resultado = mysqli_query($con, $sql);
 
-		// Iterar sobre os resultados e criar um card para cada aluguel
-		if (mysqli_num_rows($resultado) > 0) {
-			foreach ($resultado as $aluguel) {
-				echo '<div class="card">';
-				echo '<div class="apartamento">Apartamento ' . htmlspecialchars($aluguel["apartamento"]) . '</div>';
-				echo '<div class="inquilinos">Inquilinos: ' . htmlspecialchars($aluguel["inquilinos"]) . '</div>';
-				echo '<div class="data-aluguel">Alugado de ' . htmlspecialchars($aluguel["data_inicio_aluguel"]) . ' até ' . htmlspecialchars($aluguel["data_fim_aluguel"]) . '</div>';
-				echo '<div class="tipo-aluguel">Tipo do aluguel: ' . htmlspecialchars($aluguel["tipo_aluguel"]) . '</div>';
-				echo '</div>';
+			// Iterar sobre os resultados e criar um card para cada aluguel
+			if (mysqli_num_rows($resultado) > 0) {
+				foreach ($resultado as $aluguel) {
+					echo '<div class="card">';
+					echo '<div class="apartamento">Apartamento ' . htmlspecialchars($aluguel["apartamento"]) . '</div>';
+					echo '<div class="inquilinos">Inquilinos: ' . htmlspecialchars($aluguel["inquilinos"]) . '</div>';
+					echo '<div class="data-aluguel">Alugado de ' . htmlspecialchars($aluguel["data_inicio_aluguel"]) . ' até ' . htmlspecialchars($aluguel["data_fim_aluguel"]) . '</div>';
+					echo '<div class="tipo-aluguel">Tipo do aluguel: ' . htmlspecialchars($aluguel["tipo_aluguel"]) . '</div>';
+					echo '</div>';
+				}
+			}else {
+				echo "A query não retornou nenhum resultado.";
 			}
-		}else {
-			echo "A query não retornou nenhum resultado.";
-		  }
-		// Fechar a conexão com o banco de dados
-		mysqli_close($con);
-	?>
+			// Fechar a conexão com o banco de dados
+			mysqli_close($con);
+		?>
+  </div>	
 </div>
 
 </body>
