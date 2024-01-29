@@ -32,7 +32,7 @@
             $_SESSION['status']   = "success";
             header('Location: ../painel.php');
         } else {
-            $_SESSION['mensagem'] = "Não foi ".$data_ocorrencia. ' '. $desc. " possível enviar";
+            $_SESSION['mensagem'] = "Não foi possível enviar";
             $_SESSION['status']   = "danger";
             header('Location: ../painel.php');
         }
