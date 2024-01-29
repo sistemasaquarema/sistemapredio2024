@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<?php
+    // INICIAR SESSÃO
+    session_start();
+    require_once 'acoes/verifica-logado.php';
+    require_once 'acoes/conexao.php';
+?>
  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
