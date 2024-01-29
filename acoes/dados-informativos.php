@@ -10,6 +10,10 @@ require_once 'conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if(!$_FILES['imagem']){
+    $titulo = $_POST['titulo'];
+    $texto  = $_POST['texto'];
+    $conteudo = $_POST['saiba-mais'];
+    $id = $_POST['id'];
     $sql = "UPDATE informativos SET titulo = '$titulo', descricao = '$texto', conteudo = '$conteudo' WHERE id = $id";
     if(mysqli_query($con, $sql)){
       $_SESSION['mensagem'] = "Envio realizado com sucesso!";
