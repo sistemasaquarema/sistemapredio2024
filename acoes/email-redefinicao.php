@@ -24,13 +24,13 @@
             $header = "From: saquarema";
             mail($email, $assunto, $mensagem, $header);
 
-            $_SESSION['mensagem'] = "Cadastrado com sucesso!!";
+            $_SESSION['mensagem'] = "Email para redifinição enviado!";
             $_SESSION['status'] = "success";
             header('Location: ../index.php');
 
         }
         else {
-            $_SESSION['mensagem'] = "O cadastro falhou! Favor contatar o Administrador";
+            $_SESSION['mensagem'] = "Email não existe.";
             $_SESSION['status'] = "danger";
             header('Location: ../index.php');
         }
