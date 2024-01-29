@@ -48,36 +48,48 @@
   
   <form action="acoes/enviar.php" method="POST" class="needs-validation container" novalidate>
 
-    <div class="row g-12">
+  <div class="row g-12">
+	<div class="col-sm-12">
+		<div class="form-group">
+			<label for="rg">RG dos inquilinos (separado por vírgula e sem pontuação)</label>
+			<input type="text" name="rg" class="form-control" required>
+		</div>
 
-      	<div class="col-sm-12">
-        
-			<label for="rg">RG dos inquilinos (separado por virgula e sem pontuação)</label>
-			<input type="text" name="rg" required><br><br>
-			
+		<div class="form-group">
 			<label for="apartamento">Apartamento:</label>
-			<input type="text" name="apartamento" value="<?= $_SESSION['apartamento']; ?>" readonly><br><br>
-			
-			<label for="inquilinos">Nome dos Inquilinos:</label>
-			<input type="text" name="inquilinos" required><br><br>
-			
-			<label for="data_hora_atual">Data e Hora Atual:</label>
-			<input type="text" name="data_hora_atual" value="<?php echo date('d/m/Y'); ?>" readonly><br><br>
-			
-			<label for="data_inicio_aluguel">Data Início do Aluguel:</label>
-			<input class="data_input" type="text" name="data_inicio_aluguel" required><br><br>
-			
-			<label for="data_fim_aluguel">Data Fim do Aluguel:</label>
-			<input class="data_input" type="text" name="data_fim_aluguel" required><br><br>
+			<input type="text" name="apartamento" class="form-control" value="<?= $_SESSION['apartamento']; ?>" readonly>
+		</div>
 
+		<div class="form-group">
+			<label for="inquilinos">Nome dos Inquilinos:</label>
+			<input type="text" name="inquilinos" class="form-control" required>
+		</div>
+
+		<div class="form-group">
+			<label for="data_hora_atual">Data e Hora Atual:</label>
+			<input type="text" name="data_hora_atual" class="form-control" value="<?php echo date('d/m/Y'); ?>" readonly>
+		</div>
+
+		<div class="form-group">
+			<label for="data_inicio_aluguel">Data Início do Aluguel:</label>
+			<input class="form-control data_input" type="text" name="data_inicio_aluguel" required>
+		</div>
+
+		<div class="form-group">
+			<label for="data_fim_aluguel">Data Fim do Aluguel:</label>
+			<input class="form-control data_input" type="text" name="data_fim_aluguel" required>
+		</div>
+
+		<div class="form-group">
 			<label for="tipo_aluguel">Tipo de Aluguel:</label>
-				<select name="tipo_aluguel" required>
-					<option value="">Selecione</option>
-					<option value="Temporada">Temporada</option>
-					<option value="Fixo">Fixo</option>
-				</select><br><br>
-	  	</div>
-    </div>
+			<select name="tipo_aluguel" class="form-control" required>
+				<option value="">Selecione</option>
+				<option value="Temporada">Temporada</option>
+				<option value="Fixo">Fixo</option>
+			</select>
+		</div>
+	</div>
+</div>
       </br>
       </br>
       </br>
