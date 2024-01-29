@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $targetFile = $targetDir . basename($_FILES['imagem']['name']);
   $uploadOk = true;
   $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
-  if(is_null($basename)){
+  if(empty($basename)){
     $titulo = $_POST['titulo'];
     $texto  = $_POST['texto'];
     $conteudo = $_POST['saiba-mais'];
