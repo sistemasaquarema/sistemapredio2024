@@ -51,9 +51,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
    // INSTRUÇÃO SQL
    
-   $sql = "UPDATE informativos SET titulo = '$titulo', descricao = '$texto', imagem = '$img_nome' WHERE id = $id";
+   /*$sql = "UPDATE informativos SET titulo = '$titulo', descricao = '$texto', imagem = '$img_nome' WHERE id = $id";*/
   // Move o arquivo para a pasta de destino
-  if ($uploadOk && mysqli_query($con, $sql)) {
+  if ($uploadOk) {
     if (move_uploaded_file($_FILES['imagem']['tmp_name'], $targetFile)) {
       $_SESSION['mensagem'] = "Envio realizado com sucesso!";
       $_SESSION['status']   = "success";
