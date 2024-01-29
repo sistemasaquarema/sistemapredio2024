@@ -55,6 +55,9 @@
         <option value="proprietário">PROPRIETARIO</option>
         <option value="inquilino">INQUILINO</option>
       </select>
+      <div class="invalid-feedback">
+            Selecione o tipo.
+        </div>
     </div>
 
       <div class="col-sm-12">
