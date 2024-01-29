@@ -8,8 +8,8 @@
 
     if(isset($_POST['bt_cadastrar'])) {
         //pegar os dados postados e fazer o escape-
-        $email= mysqli_real_escape_string($con, $_POST['email']);
-        $senha= md5(mysqli_real_escape_string($con, $_POST['senha']));
+        $email= $_POST['email'];
+        $senha= md5($_POST['senha']);
 
         //Instrução SQL
         
