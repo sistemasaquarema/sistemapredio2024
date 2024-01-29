@@ -46,7 +46,7 @@
 
   <h3>Descreva o informativo</h3>
   
-  <form action="dados-informativos.php" method="POST" enctype="multipart/form-data" class="needs-validation container" novalidate >
+  <form action="acoes/dados-informativos.php" method="POST" enctype="multipart/form-data" class="needs-validation container" novalidate >
 
   <?php
       $id = $_GET['id'] ?? ''; 
