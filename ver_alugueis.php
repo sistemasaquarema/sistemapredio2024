@@ -89,11 +89,16 @@ h1 {
 <body>
 
 <a href="menu_de_opcoes.php" class="botao-casa">⬅<i class="fas fa-home"></i></a>
-	<h1>Lista de Aluguéis</h1>
+	<h1>Área de aluguel</h1>
 	<?php
+		session_start();
+		require_once 'acoes/verifica-logado.php';
 		// Conectar ao banco de dados e consultar os aluguéis
 		require_once 'acoes/conexao.php';
-		$sql = "SELECT * FROM aluguel where DATE(data_fim_aluguel) >= DATE(NOW())";
+
+		$ap = $_SESSION['apartamento'];
+
+		$sql = "SELECT * FROM aluguel where DATE(data_fim_aluguel) >= DATE(NOW()) AND apartamento = $ap";
 		$resultado = mysqli_query($con, $sql);
 
 		// Iterar sobre os resultados e criar um card para cada aluguel
