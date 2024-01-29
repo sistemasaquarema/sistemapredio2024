@@ -59,7 +59,7 @@
         </div>
       </div>
       <br>
-      <button class="btn btn-lg btn-warning" type="submit" name="bt_cadastrar">
+      <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_cadastrar">
       Receber email
       </button>
   
