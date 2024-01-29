@@ -72,6 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if(mysqli_query($con, $sql)){
       $_SESSION['mensagem'] = "Envio realizado com sucesso!";
       $_SESSION['status']   = "success";
+      header('Location: ../painel_adm.php');
     }
   }
 
