@@ -48,6 +48,14 @@
 
     <div class="row g-12">
 
+    <div class="col-sm-12">
+      <label for="tipo" class="form-label">Selecione</label>
+      <select class="form-control" id="tipo" name="tipo" required>
+        <option value="proprietário">Proprietário</option>
+        <option value="inquilino">Inquilino</option>
+      </select>
+    </div>
+
       <div class="col-sm-12">
         <label for="nome" class="form-label">Nome e sobrenome</label>
         <input type="text" class="form-control" id="nome" name="nome" placeholder="" value="" autofocus required>
