@@ -12,12 +12,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-
+  $basename = basename($_FILES['imagem']['name']);
   $targetDir = '../informativo/imagens/'; // Substitua pelo caminho real da pasta
   $targetFile = $targetDir . basename($_FILES['imagem']['name']);
   $uploadOk = true;
   $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
-  if(is_null($targetFile)){
+  if(is_null($$basename)){
     $titulo = $_POST['titulo'];
     $texto  = $_POST['texto'];
     $conteudo = $_POST['saiba-mais'];
