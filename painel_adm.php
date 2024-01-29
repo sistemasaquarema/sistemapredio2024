@@ -99,7 +99,6 @@
                 echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
               }
             ?> 
-            <p>DIGITE A INFORMAÇÃO</p>
             <p><a class="btn btn-lg btn-primary" href="informativos_edicao.php?id=3">Editar</a></p>
           </div>
         </div>
