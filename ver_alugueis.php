@@ -54,7 +54,7 @@
 
 			$ap = $_SESSION['apartamento'];
 
-			$sql = "SELECT * FROM aluguel where DATE(data_fim_aluguel) >= DATE(NOW()) AND apartamento = $ap AND 'status' = 1";
+			$sql = "SELECT * FROM aluguel where DATE(data_fim_aluguel) >= DATE(NOW()) AND apartamento = $ap AND status = 1";
 			$resultado = mysqli_query($con, $sql);
 
 			// Iterar sobre os resultados e criar um card para cada aluguel
