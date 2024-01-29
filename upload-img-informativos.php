@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $targetDir = 'Informativos/Imagens'; // Substitua pelo caminho real da pasta
+  $targetDir = 'informativo/imagens'; // Substitua pelo caminho real da pasta
   $targetFile = $targetDir . basename($_FILES['imagem']['name']);
   $uploadOk = true;
   $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
