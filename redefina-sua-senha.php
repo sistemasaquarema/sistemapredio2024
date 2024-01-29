@@ -46,10 +46,10 @@
   
   <form action="acoes/redefinicao.php" method="POST" class="needs-validation container" novalidate onSubmit="return validaCampo()">
   <?php
-      $id = $_GET['email'] ?? ''; 
-      echo '<input type="hidden" id="idInput" name="email" value="' . $email . '">'; // Insere o valor do ID no campo oculto
+      $email = $_GET['email']; 
+      echo '<input type="hidden" id="email" name="email" value="' . $email . '">'; // Insere o valor do ID no campo oculto
     ?>
-
+    
 
 
     <div class="row g-12">
@@ -65,7 +65,7 @@
       </div>
       <br>
       <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_cadastrar">
-      Receber email
+      Redefinir
       </button>
   
   </form>
