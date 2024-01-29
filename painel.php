@@ -84,7 +84,7 @@
                 echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
               }
             ?>
-            <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Saiba mais</a></p>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
                 echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
               }
             ?> 
-            <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Saiba mais</a></p>
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@
                 echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
               }
             ?> 
-            <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Saiba mais</a></p>
           </div>
         </div>
       </div>
@@ -184,9 +184,36 @@
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 </center>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Informações adicionais</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+      <?php 
+              $sql = "SELECT titulo, descricao, conteudo FROM informativos where id = 1";
+              $titulores = mysqli_query($con, $sql);
+              if ($titulores && mysqli_num_rows($titulores) > 0) {
+                $titulo = mysqli_fetch_assoc($titulores);
+                echo '<p>' . htmlspecialchars($titulo['conteudo']) . '</p>';
+              }
+            ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- START THE FEATURETTES -->
 
     <hr class="featurette-divider">
+
 
   <!-- FOOTER -->
   <footer class="container">
@@ -197,6 +224,7 @@
 
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
       
   </body>
