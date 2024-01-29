@@ -169,12 +169,14 @@
         <p>Nos envie sugestões ou reclamações para melhoramos nosso ambiente!.</p>
         <p><a class="btn btn-primary" href="sugestoes.php">Escrever &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        
-        <h2>Aluguel</h2>
-        <p>Envie e acesse as informações de aluguel.</p>
-        <p><a class="btn btn-primary" href="menu_de_opcoes.php">Acessar &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
+        <?php if($_SESSION['tipo'] == 'PROPRIETARIO' ) : ?>
+
+          <div class="col-lg-4">
+              <h2>Aluguel</h2>
+              <p>Envie e acesse as informações de aluguel.</p>
+              <p><a class="btn btn-primary" href="menu_de_opcoes.php">Acessar &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        <?endif;?>
     </div><!-- /.row -->
 <center>
     <h2>Reunião</h2>
