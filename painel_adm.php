@@ -79,8 +79,15 @@
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>Aniversário da PG</h1>
-            <p>Nossa querida Praia grande está completando 56 anos!.</p>
+          <?php 
+              $sql = "SELECT titulo, descricao FROM informativos where id = 2";
+              $titulores = mysqli_query($con, $sql);
+              if ($titulores && mysqli_num_rows($titulores) > 0) {
+                $titulo = mysqli_fetch_assoc($titulores);
+                echo '<h1>' . htmlspecialchars($titulo['titulo']) . '</h1>';
+                echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
+              }
+            ?> 
             <p><a class="btn btn-lg btn-primary" href="informativos_edicao.php?id=2">Editar</a></p>
           </div>
         </div>
