@@ -68,8 +68,20 @@
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Gás encanado!</h1>
-            <p>O serviço de encanamento do gás esta sendo feito no nosso querido edificio!</p>
+          ?>
+        <!--<img src="images/imagem03.jpg" alt="Foto de trabalho" />-->
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <?php 
+              $sql = "SELECT titulo, descricao FROM informativos where id = 1";
+              $titulores = mysqli_query($con, $sql);
+              if ($titulores && mysqli_num_rows($titulores) > 0) {
+                $titulo = mysqli_fetch_assoc($titulores);
+                echo '<h1>' . htmlspecialchars($titulo['titulo']) . '</h1>';
+                echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
+              }
+            ?> 
             <p><a class="btn btn-lg btn-primary" href="informativos_edicao.php?id=1">Editar</a></p>
           </div>
         </div>
@@ -79,8 +91,20 @@
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>Aniversário da PG</h1>
-            <p>Nossa querida Praia grande está completando 56 anos!.</p>
+          ?>
+        <!--<img src="images/imagem03.jpg" alt="Foto de trabalho" />-->
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <?php 
+              $sql = "SELECT titulo, descricao FROM informativos where id = 2";
+              $titulores = mysqli_query($con, $sql);
+              if ($titulores && mysqli_num_rows($titulores) > 0) {
+                $titulo = mysqli_fetch_assoc($titulores);
+                echo '<h1>' . htmlspecialchars($titulo['titulo']) . '</h1>';
+                echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
+              }
+            ?> 
             <p><a class="btn btn-lg btn-primary" href="informativos_edicao.php?id=2">Editar</a></p>
           </div>
         </div>
