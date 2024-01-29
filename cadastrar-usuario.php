@@ -50,7 +50,8 @@
 
     <div class="col-sm-12">
       <label for="tipo" class="form-label">Selecione</label>
-      <select class="form-control" id="tipo" name="tipo" placeholder= "Selecione" required>
+      <select class="form-control" id="tipo" name="tipo" required>
+        <option value="">Selecione uma opção</option>
         <option value="proprietário">PROPRIETARIO</option>
         <option value="inquilino">INQUILINO</option>
       </select>
