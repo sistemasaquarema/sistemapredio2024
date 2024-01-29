@@ -75,7 +75,7 @@
 		<p>Os dados serão ocultados mantendo o relator da ocorrência anônimo(a)</p>
 		</center>
 		<label for="apartamento">Apartamento:</label>
-		<input type="text" name="apartamento" value="<?php echo $_SESSION['apartamento']; ?>" readonly><br><br>
+		<input type="text" name="apartamento" value="<?= $_SESSION['apartamento']; ?>" readonly><br><br>
 
 		<label for="morador">Nome do morador:</label>
 		<input type="text" name="morador" required><br><br>
