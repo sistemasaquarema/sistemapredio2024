@@ -69,7 +69,7 @@
           <div class="carousel-caption text-start">
             <h1>Gás encanado!</h1>
             <p>O serviço de encanamento do gás esta sendo feito no nosso querido edificio!</p>
-            <p><a class="btn btn-lg btn-primary" href="informativos_edicao.php">Editar</a></p>
+            <p><a class="btn btn-lg btn-primary" href="informativos_edicao.php?id=1">Editar</a></p>
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
           <div class="carousel-caption">
             <h1>Aniversário da PG</h1>
             <p>Nossa querida Praia grande está completando 56 anos!.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Editar</a></p>
+            <p><a class="btn btn-lg btn-primary" href="informativos_edicao.php?id=2">Editar</a></p>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
           <div class="carousel-caption text-end">
             <h1>INFORMATIVO 3</h1>
             <p>DIGITE A INFORMAÇÃO</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Editar</a></p>
+            <p><a class="btn btn-lg btn-primary" href="informativos_edicao.php?id=3">Editar</a></p>
           </div>
         </div>
       </div>

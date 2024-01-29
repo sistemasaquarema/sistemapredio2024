@@ -48,6 +48,11 @@
   
   <form action="dados-informativos.php" method="POST" enctype="multipart/form-data" class="needs-validation container" novalidate >
 
+  <?php
+      $id = $_GET['id'] ?? ''; 
+      echo '<input type="hidden" id="idInput" name="id" value="' . $id . '">'; // Insere o valor do ID no campo oculto
+    ?>
+
     <div class="row g-12">
 
       <div class="col-sm-12">
