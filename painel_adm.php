@@ -178,6 +178,12 @@
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
+    <h2>Usuarios</h2>
+        <p>Visualize as informações de Usuarios</p>
+        <p><a class="btn btn-primary" href="usuariosadm.php">Acessar &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
 
     <!-- START THE FEATURETTES -->
 
