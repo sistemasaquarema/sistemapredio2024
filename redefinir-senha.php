@@ -59,12 +59,12 @@
         </div>
       </div>
       <br>
-      <button class="w-100 btn btn-primary custom-btn" type="submit" name="bt_cadastrar">Receber email</button>
-        
+      <button class="btn btn-lg btn-warning" type="submit" name="bt_cadastrar">
+      Receber email
+      </button>
+  
   </form>
 </div>
-
-
 
 <!-- bootstrap.js -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
