@@ -79,12 +79,13 @@
 		if (mysqli_num_rows($resultado) > 0) {
 			foreach ($resultado as $aluguel) {
 				echo '<input type="hidden" id="id" name="id" value="' . $aluguel['id']  . '">';
-			}		
+			}	
+			echo '<button class="w-50 btn btn-primary btn-lg" type="submit" name="bt_excluiinq">
+      Excluir inquilino
+      </button>';
 		}		
 		?>
-	  <button class="w-50 btn btn-primary btn-lg" type="submit" name="bt_excluiinq">
-      Excluir inquilino
-      </button>
+	  
 	</form>
 </div>
 
