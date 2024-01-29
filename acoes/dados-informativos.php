@@ -9,7 +9,7 @@ require_once 'conexao.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $targetDir = 'informativo/imagens'; // Substitua pelo caminho real da pasta
+  $targetDir = '../informativo/imagens'; // Substitua pelo caminho real da pasta
   $targetFile = $targetDir . basename($_FILES['imagem']['name']);
   $uploadOk = true;
   $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
@@ -51,8 +51,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    
    $sql = "UPDATE informativos SET titulo = '$titulo', descricao = '$texto', imagem = '$img_nome' WHERE id = $id";
   // Move o arquivo para a pasta de destino
-  if ($uploadOk && mysqli_query($con, $sql)) {
-    if (move_uploaded_file($_FILES['imagem']['tmp_name'], $targetFile)) {
+  if ($uploadOk) {
+    if (move_uploaded_file($_FILES['imagem']['tmp_name'], $targetFile) && mysqli_query($con, $sql)) {
       $_SESSION['mensagem'] = "Envio realizado com sucesso!";
       $_SESSION['status']   = "success";
       header('Location: ../painel_adm.php');
