@@ -74,7 +74,7 @@
         <label for="imagem" class="form-label">Imagem</label>
       </div>
       <div class="col-sm-12">
-        <input type="file" class="form-control1" id="" name="imagem" placeholder="" value="" autofocus required>
+        <input type="file" class="form-control1" id="" name="imagem" placeholder="" value="" autofocus >
       </div>
       </br>
       </br>
