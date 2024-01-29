@@ -62,8 +62,13 @@
 
 
       <div class="col-sm-12">
-        <label for="texto" class="form-label">Texto</label>
+        <label for="texto" class="form-label">Descrição</label>
         <input type="text" class="form-control1" id="" name="texto" placeholder="" value="" autofocus required>
+      </div>
+
+      <div class="col-sm-12">
+        <label for="texto" class="form-label">Conteúdo do 'Saiba Mais'</label>
+        <input type="text" class="form-control1" id="" name="saiba-mais" placeholder="" value="" autofocus required>
       </div>
       <div class="col-sm-12">
         <label for="imagem" class="form-label">Imagem</label>
