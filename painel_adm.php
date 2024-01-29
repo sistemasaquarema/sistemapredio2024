@@ -2,6 +2,7 @@
     // INICIAR SESSÃO
     session_start();
     require_once 'acoes/verifica-logado.php';
+    require_once 'acoes/conexao.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -89,7 +90,15 @@
 
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>INFORMATIVO 3</h1>
+            <?php 
+              $sql = "SELECT titulo, descricao FROM informativos where id = 3";
+              $titulores = mysqli_query($con, $sql);
+              if ($titulores && mysqli_num_rows($titulores) > 0) {
+                $titulo = mysqli_fetch_assoc($titulores);
+                echo '<h1>' . htmlspecialchars($titulo['titulo']) . '</h1>';
+                echo '<p>' . htmlspecialchars($titulo['descricao']) . '</p>';
+              }
+            ?> titulo,penes
             <p>DIGITE A INFORMAÇÃO</p>
             <p><a class="btn btn-lg btn-primary" href="informativos_edicao.php?id=3">Editar</a></p>
           </div>
