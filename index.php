@@ -64,8 +64,8 @@ session_start();
           </br>
           </br>
           <div class='alert corh1'> Nova conta? <a class='btn btn-lg btn-warning' href='cadastrar-usuario.php'> Cadastre-se </a> </div>
-      
-          
+          </br>
+          <div class='alert corh1'> Esqueceu a senha? <a class='btn btn-lg btn-warning' href='redefinir-senha.php'> Redefina </a> </div>
           <p class="mt-5 mb-3 text-muted"> Edificio Saquarema &copy; 2023</p>
         </form>
       </main>
