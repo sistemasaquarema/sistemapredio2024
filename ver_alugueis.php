@@ -68,14 +68,12 @@
 					echo '</div>';
 				}
 			}else {
-				echo '<p><a class="btn btn-primary" href="formulario_aluguel.php">Adicionar inquilino</a></p>';
+				echo '</br></br> <p><a class="btn btn-primary" href="formulario_aluguel.php">Adicionar inquilino</a></p>';
 			}
 			// Fechar a conexão com o banco de dados
 			mysqli_close($con);
 		?>
   	</div>	
-		</br>
-		</br>
 	<form action="acoes/excluir_aluguel.php" method="POST">
 		<?php  
 		if (mysqli_num_rows($resultado) > 0) {
