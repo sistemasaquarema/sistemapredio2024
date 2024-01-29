@@ -54,7 +54,7 @@
 
 			$ap = $_SESSION['apartamento'];
 
-			$sql = "SELECT * FROM aluguel where DATE(data_fim_aluguel) >= DATE(NOW()) AND apartamento = $ap";
+			$sql = "SELECT * FROM aluguel where DATE(data_fim_aluguel) >= DATE(NOW()) AND apartamento = $ap AND 'status' = 1";
 			$resultado = mysqli_query($con, $sql);
 
 			// Iterar sobre os resultados e criar um card para cada aluguel
@@ -68,12 +68,24 @@
 					echo '</div>';
 				}
 			}else {
-				echo "A query não retornou nenhum resultado.";
+				echo '<p><a class="btn btn-primary" href="formulario_aluguel.php">Adicionar inquilino</a></p>';
 			}
 			// Fechar a conexão com o banco de dados
 			mysqli_close($con);
 		?>
   	</div>	
+	<form action="acoes/excluir_aluguel.php" method="POST">
+		<?php  
+		if (mysqli_num_rows($resultado) > 0) {
+			foreach ($resultado as $aluguel) {
+				echo '<input type="hidden" id="id" name="id" value="' . $aluguel['id']  . '">';
+			}		
+		}		
+		?>
+	  <button class="w-50 btn btn-primary btn-lg" type="submit" name="bt_excluiinq">
+      Excluir inquilino
+      </button>
+	</form>
 </div>
 
 </body>
