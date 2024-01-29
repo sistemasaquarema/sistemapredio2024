@@ -45,8 +45,8 @@
 <div class="container-fluid bg1 text-center cadcurso" id="quem">
 
   <h3>Aluguel atual</h3>
-  <div class="col-sm-12">
-	<?php
+  	<div class="col-sm-12" style="color: black;">
+		<?php
 			session_start();
 			require_once 'acoes/verifica-logado.php';
 			// Conectar ao banco de dados e consultar os aluguéis
@@ -73,7 +73,7 @@
 			// Fechar a conexão com o banco de dados
 			mysqli_close($con);
 		?>
-  </div>	
+  	</div>	
 </div>
 
 </body>
