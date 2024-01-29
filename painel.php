@@ -174,7 +174,7 @@
           <div class="col-lg-4">
               <h2>Aluguel</h2>
               <p>Envie e acesse as informações de aluguel.</p>
-              <p><a class="btn btn-primary" href="menu_de_opcoes.php">Acessar &raquo;</a></p>
+              <p><a class="btn btn-primary" href="ver_alugueis.php">Acessar &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           </div><!-- /.row -->
     <div class="row">

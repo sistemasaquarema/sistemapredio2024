@@ -35,7 +35,7 @@
     </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="nav navbar-nav d-flex justify-content-end" id="links">
-            <li><a href="painel.php">X</a></li>
+            <li><a href="painel.php">Voltar</a></li>
         </ul>
     </div>
   </div>
