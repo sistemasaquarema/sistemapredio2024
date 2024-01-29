@@ -52,8 +52,8 @@
       <label for="tipo" class="form-label">Você é proprietário ou inquilino?</label>
       <select class="form-control" id="tipo" name="tipo" required>
         <option value="">Selecione uma opção</option>
-        <option value="proprietário">PROPRIETARIO</option>
-        <option value="inquilino">INQUILINO</option>
+        <option value="PROPRIETARIO">Proprietário</option>
+        <option value="INQUILINO">Inquilino</option>
       </select>
       <div class="invalid-feedback">
             Obrigatório selecionar o tipo do cadastro.
