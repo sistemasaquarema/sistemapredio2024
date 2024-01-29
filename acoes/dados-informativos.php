@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       header('Location: ../painel_adm.php');
     }
   }else{
-    $sql = "UPDATE informativos SET titulo = '$titulo', descricao = '$texto', conteudo = '$conteudo' WHERE id = $id";
+    $sql = "UPDATE informativos SET titulo = '$titulo', descricao = '$texto', conteudo = '$conteudo', imagem = '$img_nome' WHERE id = $id";
     if(mysqli_query($con, $sql)){
       $_SESSION['mensagem'] = "Envio realizado com sucesso!";
       $_SESSION['status']   = "success";
