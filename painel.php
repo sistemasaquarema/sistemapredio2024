@@ -2,6 +2,7 @@
     // INICIAR SESSÃO
     session_start();
     require_once 'acoes/verifica-logado.php';
+    require_once 'acoes/conexao.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
