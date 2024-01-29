@@ -64,7 +64,14 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/imagem01.jpg" alt="Foto de trabalho" />
+      <?php
+          $sql = "SELECT imagem FROM informativos where id = 1";
+          $imgres = mysqli_query($con, $sql);
+          if ($imgres && mysqli_num_rows($imgres) > 0) {
+            $img = mysqli_fetch_assoc($imgres);
+            echo '<img src="informativo/imagens/' . htmlspecialchars($img['imagem']) . '"/>';
+          }
+        ?>
 
         <div class="container">
           <div class="carousel-caption text-start">
