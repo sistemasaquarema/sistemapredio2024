@@ -85,7 +85,7 @@
 		<input type="text" name="apartamento" value="<?= $_SESSION['apartamento']; ?>" readonly><br><br>
 
 		<label for="morador">Nome do morador:</label>
-		<input type="text" name="morador" required><br><br>
+		<input type="text" name="morador" value="<?= $_SESSION['nome']; ?>" readonly><br><br>
 
 		<center>
 		<h2>Ocorrência</h2>
