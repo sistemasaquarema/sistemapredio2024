@@ -10,7 +10,7 @@
         $id = $_POST['id'];
 
         // INSTRUÇÃO SQL
-        $sql = "DELETE FROM aluguel WHERE id = '$id'";
+        $sql = "UPDATE aluguel SET status = 0  WHERE id = '$id'";
 
         // EXECUTAR INSTRUCAO SQL E VERIFICAR SUCESSO
         if(mysqli_query($con, $sql)) {

@@ -169,21 +169,25 @@
         <p>Nos envie sugestões ou reclamações para melhoramos nosso ambiente!.</p>
         <p><a class="btn btn-primary" href="sugestoes.php">Escrever &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
+        <?php if($_SESSION['tipo'] == 'PROPRIETARIO' ) : ?>
+
+          <div class="col-lg-4">
+              <h2>Aluguel</h2>
+              <p>Envie e acesse as informações de aluguel.</p>
+              <p><a class="btn btn-primary" href="ver_alugueis.php">Acessar &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+    <div class="row">
       <div class="col-lg-4">
-        
-        <h2>Aluguel</h2>
-        <p>Envie e acesse as informações de aluguel.</p>
-        <p><a class="btn btn-primary" href="menu_de_opcoes.php">Acessar &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-<center>
-    <h2>Reunião</h2>
-        <p>Acesse a reunião.</p>
-        <p>Para sair da reunião, clique no botão HOME no canto superior esquerdo.</p>
-        <p><a class="btn btn-primary" href="reuniao.php">Acessar &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-</center>
+      <h2>Reunião</h2>
+          <p>Acesse a reunião.</p>
+          <p>Para sair da reunião, clique no botão HOME no canto superior esquerdo.</p>
+          <p><a class="btn btn-primary" href="reuniao.php">Acessar &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+        <?php endif;?>
+   
+
 
 <!-- Modal -->
 <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

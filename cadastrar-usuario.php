@@ -48,6 +48,18 @@
 
     <div class="row g-12">
 
+    <div class="col-sm-12">
+      <label for="tipo" class="form-label">Você é proprietário ou inquilino?</label>
+      <select class="form-control" id="tipo" name="tipo" required>
+        <option value="">Selecione uma opção</option>
+        <option value="PROPRIETARIO">Proprietário</option>
+        <option value="INQUILINO">Inquilino</option>
+      </select>
+      <div class="invalid-feedback">
+            Obrigatório selecionar o tipo do cadastro.
+        </div>
+    </div>
+
       <div class="col-sm-12">
         <label for="nome" class="form-label">Nome e sobrenome</label>
         <input type="text" class="form-control" id="nome" name="nome" placeholder="" value="" autofocus required>
@@ -112,7 +124,7 @@
       </div>
       <br>
       <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_cadastrar">
-      Sign up
+      Cadastrar
       </button>
   
   </form>
